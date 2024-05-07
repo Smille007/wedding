@@ -21,7 +21,7 @@ function Sidebar () {
             <span>
               Daryna <small>&</small> Johnny
             </span>
-            <h6>09.06.2024</h6>
+            <h6>09.07.2024</h6>
           </a>
         </div>
         <nav className='oliven-main-menu'>
@@ -55,7 +55,7 @@ function Sidebar () {
           <p>
             Daryna & Johnny
             <br />
-            September 6th, 2024, New York
+            September 7th, 2024, New York
           </p>
         </div>
       </aside>

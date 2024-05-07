@@ -13,7 +13,7 @@ function Header () {
               Daryna & Johnny
             </h1>
             <h5 className='animate-box' data-animate-effect='fadeInUp'>
-              5, September, 2024 – New York
+              7, September, 2024 – New York
             </h5>
           </div>
         </div>

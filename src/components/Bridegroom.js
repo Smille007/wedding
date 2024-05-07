@@ -90,7 +90,7 @@ function Bridegroom () {
           >
             <h3 className='oliven-couple-title'>Are getting married!</h3>
             <h4 className='oliven-couple-subtitle'>
-              September 5, 2024 — New York
+              September 7, 2024 — New York
             </h4>
           </div>
         </div>
