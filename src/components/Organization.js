@@ -21,7 +21,7 @@ function Organization () {
           </div>
           <div className='col-md-3 item-box'>
             <h2 className='custom-font numb'>02</h2>
-            <h6 className='title'>Lunch Time</h6>
+            <h6 className='title'>Cocktail Hour</h6>
             <p>
               Delta tristiu the jusone duise vitae diam neque nivami mis est
               augue artine aringilla the at elit finibus vivera.
@@ -39,8 +39,11 @@ function Organization () {
             <h2 className='custom-font numb'>04</h2>
             <h6 className='title'>Cake Cutting</h6>
             <p>
-              Delta tristiu the jusone duise vitae diam neque nivami mis est
-              augue artine aringilla the at elit finibus vivera.
+              TBA
+              
+            
+
+            
             </p>
           </div>
         </div>

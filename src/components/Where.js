@@ -25,7 +25,7 @@ function Where () {
                 <i className='ti-location-pin'></i> Secret!
               </p>
               <p>
-                <i className='ti-time'></i> <span>2:00pm – 3:30pm</span>
+                <i className='ti-time'></i> <span>2:00pm – 4:00pm</span>
               </p>
             </div>
           </div>

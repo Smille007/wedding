@@ -858,10 +858,6 @@ body.slide .oliven-nav-toggle {
     width: 100%; /* Full width */
 }
 
-.header .caption .o-hidden {
-    display: inline-block;
-    margin-top: 50px; /* Adjust margin as needed */
-}
 
 .header .caption h5 {
     font-family: 'Nunito Sans', sans-serif;
