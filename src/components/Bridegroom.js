@@ -1,7 +1,8 @@
-import React from 'react'
-import Bride from '../assets/images/bride.jpg'
-import Groom from '../assets/images/groom.jpg'
-function Bridegroom () {
+import React from 'react';
+import Bride from '../assets/images/bride.jpg';
+import Groom from '../assets/images/groom.jpg';
+
+function Bridegroom() {
   return (
     <div id='couple' className='bridegroom clear section-padding bg-pink'>
       <div className='container'>
@@ -13,7 +14,7 @@ function Bridegroom () {
             >
               <div className='img'>
                 {' '}
-                <img src={Bride} alt='' />{' '}
+                <img src={Bride} alt='Bride' />{' '}
               </div>
               <div className='info valign'>
                 <div className='full-width'>
@@ -26,18 +27,16 @@ function Bridegroom () {
                   </p>
                   <div className='social'>
                     <div className='full-width'>
-                      <a href='#0' className='icon'>
+                      <a
+                        href='https://www.instagram.com/smille007/'
+                        className='icon'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
                         {'@smille007 '}
-                        <i className='ti-facebook'></i>{' '}
+                        <i className='ti-instagram'></i>
                       </a>
-                      <a href='#0' className='icon'>
-                        {' '}
-                        <i className='ti-twitter'></i>{' '}
-                      </a>
-                      <a href='#0' className='icon'>
-                        {' '}
-                        <i className='ti-instagram'></i>{' '}
-                      </a>
+                      {/* Instagram link for the bride */}
                     </div>
                   </div>
                 </div>
@@ -51,7 +50,7 @@ function Bridegroom () {
             >
               <div className='img'>
                 {' '}
-                <img src={Groom} alt='' />{' '}
+                <img src={Groom} alt='Groom' />{' '}
               </div>
               <div className='info valign'>
                 <div className='full-width'>
@@ -59,23 +58,19 @@ function Bridegroom () {
                     Johnny Diaz <i className='ti-heart'></i>
                   </h6>{' '}
                   <span>The Groom</span>
-                  <p>
-                    Johnny is fucking awesome! the best so best! 
-                  </p>
+                  <p>Johnny is awesome! the best so best!</p>
                   <div className='social'>
                     <div className='full-width'>
-                      <a href='#0' className='icon'>
-                        {' '}
-                        <i className='ti-facebook'></i>{' '}
+                      <a
+                        href='https://www.instagram.com/johnny/'
+                        className='icon'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {'@johnny '}
+                        <i className='ti-instagram'></i>
                       </a>
-                      <a href='#0' className='icon'>
-                        {' '}
-                        <i className='ti-twitter'></i>{' '}
-                      </a>
-                      <a href='#0' className='icon'>
-                        {' '}
-                        <i className='ti-instagram'></i>{' '}
-                      </a>
+                      {/* Instagram link for the groom */}
                     </div>
                   </div>
                 </div>
@@ -96,7 +91,7 @@ function Bridegroom () {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Bridegroom
+export default Bridegroom;

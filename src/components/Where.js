@@ -1,7 +1,7 @@
 import React from 'react'
 import where1 from '../assets/images/where-1.jpg'
 import where2 from '../assets/images/where-2.jpg'
-import where3 from '../assets/images/where-3.jpg'
+// import where3 from '../assets/images/where-3.jpg'
 function Where () {
   return (
     <div id='whenwhere' className='whenwhere section-padding bg-pink'>
@@ -44,12 +44,12 @@ function Where () {
               </p>
             </div>
           </div>
-          <div className='item col-12 col-md-4'>
-            <div className='whenwhere-img'>
+          {/* <div className='item col-12 col-md-4'>
+            {/* <div className='whenwhere-img'>
               {' '}
               <img src={where3} alt='' />
             </div>
-            <div className='content'>
+            {/* <div className='content'>
               <h5>Accomodations</h5>
               <p>
                 <i className='ti-direction-alt'></i> Hotel and distance from
@@ -58,11 +58,11 @@ function Where () {
               <p>
                 <i className='ti-direction'></i> The William Vale (7 min)
               </p>
-            </div>
-          </div>
+            </div> */} 
+        </div> 
         </div>
       </div>
-    </div>
+   // </div>
   )
 }
 
