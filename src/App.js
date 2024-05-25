@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import axios from 'axios';
 import Bridegroom from './components/Bridegroom';
 import Countdown from './components/Countdown';
 import Footer from './components/Footer';
@@ -10,10 +11,23 @@ import Seeyou from './components/Seeyou';
 import Sidebar from './components/Sidebar';
 import Story from './components/Story';
 import Where from './components/Where';
-import 'react-refresh/runtime.js'
-
+import ThankYou from './components/ThankYou'; // Import the ThankYou component
+import 'react-refresh/runtime.js';
 
 function App() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleRSVPSubmit = async (formData) => {
+    try {
+      const response = await axios.post('http://localhost:4005/rsvp', formData);
+      console.log('RSVP submitted:', response.data);
+      setIsSubmitted(true); // Set state to true after successful submission
+    } catch (error) {
+      console.error('Error submitting RSVP:', error);
+      // Handle error (e.g., show an error message)
+    }
+  };
+
   return (
     <>
       <Sidebar />
@@ -26,7 +40,11 @@ function App() {
         <Organization />
         <Gallery />
         <Where />
-        <RSVP />
+        {isSubmitted ? ( // Render ThankYou component if RSVP is submitted
+          <ThankYou />
+        ) : ( // Render RSVP component if RSVP is not yet submitted
+          <RSVP onSubmit={handleRSVPSubmit} />
+        )}
         <Footer />
       </div>
     </>
