@@ -8,6 +8,7 @@ function RSVP() {
     guests: '',
     msg: ''
   });
+  const [submitSuccess, setSubmitSuccess] = useState(false); // State to track form submission success
 
   const handleChange = (e) => {
     setFormData({
@@ -21,7 +22,13 @@ function RSVP() {
     try {
       const response = await axios.post('http://localhost:4005/rsvp', formData);
       console.log('RSVP submitted:', response.data);
-      // You can add a success message or reset the form here
+      setSubmitSuccess(true); // Set submitSuccess to true after successful form submission
+      setFormData({ // Reset form fields
+        fullName: '',
+        email: '',
+        guests: '',
+        msg: ''
+      });
     } catch (error) {
       console.error('Error submitting RSVP:', error);
       // Handle error (e.g., show an error message)
@@ -96,6 +103,15 @@ function RSVP() {
                 </div>
               </div>
             </form>
+            {submitSuccess && (
+              <div className='col-md-12'>
+                <div className='form-group'>
+                  <div className="success-message">
+                    <p>Thank you for your RSVP!</p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
